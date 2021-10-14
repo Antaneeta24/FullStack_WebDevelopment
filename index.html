@@ -11,31 +11,17 @@
             margin: 5px;
             box-sizing: border-box;
         }
-        .background{
-            color: #fff;
+        div.parent div{
+            background-color: lime;
         }
-        h1.background{
-            background-color: blueviolet;
-        }
-        h2.background{
-            background-color: red;
-        }
-        h2.background#unique{
-            background-color: cyan;
-        }
-        h3.background{
-            background-color: greenyellow;
-        }
-        span.background{
-            background-color: hotpink;
-        }
+        
     </style>
 </head>
 <body>
-    <h1 class="background">Heading One</h1>
-    <h2 id="unique" class="background">Heading Two</h2>
-    <h2 class="background">SEcond Heading Two</h2>
-    <h3 class="background">Heading ThreeS</h3>
-    <span class="background">I'm a Span</span>
+    <div class="parent">
+        <div>I'm a first div</div>
+        <div>I'm a second div</div>
+        <div>I'm a third div</div>
+    </div>
 </body>
 </html>
