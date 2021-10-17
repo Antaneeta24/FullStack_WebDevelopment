@@ -5,60 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        div.parent{
-            height: 500px;
-            background-color: #111;
-        }
-        div.child{
-            height: 100px;
-            width: 100px;
-            background-color: #ffbf00;
-            border-radius: 50%;
-            animation: 1s move ease;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            
-        }
-        div.child-2{
-            height: 100px;
-            width: 100px;
-            margin-left: 100px;
-            background-color: #ffbf00;
-            border-radius: 50%;
-            animation: 1s move ease;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-delay: 1s;
-        }
-        div.parent:hover div.child{
-            animation: 1s move ease;
-        }
-        @keyframes move {
-            0%{
-                transform: translateX(0vw);
-            }
-            50%{
-                transform: translate(300px, 200px);
-                background-color: cyan;
-            }
-            50%{
-                transform: translate(500px, 200px);
-                background-color: orange;
-            }
-            100%{
-                transform: translateX(400px);
-                background-color: crimson;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
     <div class="parent">
