@@ -1,35 +1,143 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: Poppins;
+    font-family: "Poppins";
     color: unset;
     list-style: none;
 }
-
 header{
-    background-image: url('../images/day.jpeg');
+    background-image: url("../images/day.jpeg");
     height: 300px;
     background-size: cover;
     background-position: center;
 }
-
-/* footer styles */
-
-img.social{
-    width: 30px;
-    margin: 0px 10px;
-}
 footer{
     background-color: #f1f1f1;
-    color: #111;
+    color: #4f4dde;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
     font-size: 1.2rem;
+    padding: 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
+    
+}
+img.social{
+    width: 20px;
+    margin: 10px;
+}
+.list-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.list-container div.container{
+    width: 450px;
+    min-height: 400px;
+    position: absolute;
+    top: -200px;
+}
+
+.list-container div.container h2{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.container h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div{
+    display: block;
+}
+h2{
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#switch {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label.switch-label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    height: 35px;
+    background: #fff;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+}
+label.switch-label:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    background: #f6d327;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+div.list-item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    border-radius: 5px;
+    height: 40px;
+    opacity: 0.93;
+}
+div.list-item input{
+    background-color: transparent;
+    width: 95%;
+    font-size: 1.2rem;
+    padding-left: 7px;
+    color: gray;
+    border: 0px;
+    height: 95%;
+    font-weight: 400;
+}
+
+ol.todo-list {
+    margin-top: 50px;
+    max-height: 500px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+div.taskbar{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: grey;
+    opacity: 1;
+    margin: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    border-radius: 5px;
+    height: 40px;
+}
+ol {
+    list-style-type: decimal;
+}
+.active{
+    color: #4f4dde;
 }

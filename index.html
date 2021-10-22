@@ -6,22 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <style></style>
 </head>
 <body>
     <header></header>
+    <section class="list-container">
+        <div class="container">
+            <h2>
+                Todo List
+                <input type="checkbox" id="switch" />
+                <label class="switch-label" for="switch">
+                    "Toggle"
+                    ::after
+                </label>
+            </h2>
+            <div class="list">
+                <div class="list-item">
+                    <input placeholder="Add a task to the List..." type="text">
+                    <button>+</button>
+                </div>
+                <ol class="todo-list">
+                    <div class="taskbar">
+                        <div>0 items</div>
+                        <div style="display: flex;" class="list">
+                            <div class="active" id="all">All </div>
+                            <div id="pending">Pending </div>
+                            <div id="complete">Completed </div>
+                        </div>
+                        <div class="clear">Clear</div>
+                    </div>
+                    <div class="items"></div>
+                </ol>
+            </div>
+        </div>
+    </section>
     <footer>
         <div>
-            <a href="https://github.com/Antaneeta24">Mary Antaneeta CT</a>
+            <a target="_blank" href="https://github.com/Antaneeta24">Mary Antaneeta CT</a>
         </div>
         <div>
-           <a href="#" >
-            <img class="social" src="./assets/images/github.png" alt="">
-           </a>
            <a href="#" >
             <img class="social" src="./assets/images/instagram.png" alt="">
            </a>
            <a href="#" >
             <img class="social" src="./assets/images/linkedin.png" alt="">
+           </a>
+           <a href="#" >
+            <img class="social" src="./assets/images/github.png" alt="">
            </a>
         </div>
     </footer>
