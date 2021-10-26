@@ -1,5 +1,11 @@
 var heading = document.getElementById("heading")
-var para = document.getElementsByClassName("para")
-var tags = document.getElementsByTagName('a')
-var query = document.querySelector('.para')
-console.log(query)
+var body = document.querySelector("body")
+
+
+heading.innerHTML = "I was added by JS"
+heading.style = "color:red;font-size:2rem"
+
+heading.classList.add("five")
+heading.classList.remove("one")
+
+body.classList.remove("dark")
